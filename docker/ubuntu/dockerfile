@@ -64,3 +64,9 @@ EXPOSE 8000
 # 7. EXECUÇÃO COM USUÁRIO RESTRITO
 # ============================================
 USER datauser
+
+
+# ============================================
+# 8. COMANDO PADRÃO (MANTÉM O CONTAINER RODANDO)
+# ============================================
+CMD ["tail", "-f", "/dev/null"]
